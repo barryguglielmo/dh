@@ -1,0 +1,39 @@
+{% extends "main_header.html" %}
+{% load staticfiles %}
+{% block content %}
+{% include 'includes/ProgrammingNav.html' %}
+
+<center>
+<h1 style = 'font-wight:bold;'><u>OPEN SOURCE PROGRAMMING</u></h1>
+
+<br><br>
+<div class="container"> 
+	<div>
+		<div>
+			<img src="{% static 'imgs/open.jpeg' %}" style = 'width: 50%; height:50%;'width="300" height="300"alt="code">
+		</div>
+	</div>
+</div>
+<br><br> 
+<p class = "ex">
+Open source programming is a collaborative effort to build free and accessible tools for making dope applicaitons or various
+types of software tools. From gaming to cancer research open source programming can help you build impressive applications.
+<br><br>
+This site will focus on the use of Python and R, but I will do my best to give advice and concepts that can be translated to any language.
+If you have never coded before I strongly suggest going to my <a href ='/op_get_started/' >Getting Started Tutorial</a>. 
+There you will find resources and various lesson plans that will help get you off the ground.
+<br><br>
+If you already have a computational language under your belt then it is time for you to start seeing some problems that you 
+may encounter in the field. For this you can go to the <a>Dojo</a> to train some of your skills with real life problems.
+<br><br>
+If you want to keep up to date with what is going on in the world of computational biology you should check out <a>The Buzz</a>. It has 
+articles and key concepts of the field.
+<br><br>
+I also have many of my Python and R scripts available for you to disect on my <a>GitHub</a> which you are free to access. I also have a section
+of this site dedicated to Python and R programming with references to some of my favorite modules and libraries that they provide. This
+section is called <a>R-ython</a>.
+Remember, programming is about being lazy, do not reinvent the wheel. Use all the tools available to you.
+<br><br>
+<br><br>
+</center>
+{% endblock %}

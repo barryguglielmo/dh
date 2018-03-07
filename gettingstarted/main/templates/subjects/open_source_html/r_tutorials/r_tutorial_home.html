@@ -1,0 +1,141 @@
+{% extends "main_header.html" %}
+{% load staticfiles %}
+{% block content %}
+{% include 'includes/ProgrammingNav.html' %}
+
+
+<center>
+<h1 style = "font-weight: bold;"> R Tutorials</h1>
+</center>
+<br><br>
+
+<div class="container">
+<center> 
+	<div>
+		<img src="{% static 'imgs/r_graph.jpg' %}" style = 'width: 60%; height:60%;'width="400" height="400"alt="graph">
+	</div>
+</center>
+</div>
+
+<p class = 'ex' ><br><br>
+R is used to do some amazing statistical magic and create illustrious graphs.
+Use the search bar for key words you may be interested in, otherwise the tutorials start from set up and starting to more complex.
+Happy coding! <br><br>
+</p>
+<!-- These are the Introductory Tutorials -->
+<center>
+
+
+<button onclick="show('intut')" style = 'width:50%;'>R Intro Tutorials</button>
+<div id="intut" class = "panel" >
+	<button class = "pan2" onclick="show('macpcd')">R Downloads</button><br>
+		<div id = "macpcd" class = "panel"><br>
+			<button class = "pan3" onclick="show('macdown')">Mac Download</button><br>
+				<div id = "macdown" class = "panel">{% include 'includes/tutorial_includes/mac_download.html' %}</div>
+			<button class = "pan3" onclick="show('pcdown')">PC Download</button>
+				<div id = "pcdown" class = "panel">{% include 'includes/tutorial_includes/pc_download.html' %}</div><br>
+		</div>
+	<button class = "pan2" onclick="show('rstd')">RStudio Downloads</button><br>
+		<div id = "rstd" class = "panel">
+		{% include 'includes/tutorial_includes/rstd_download.html' %}
+		</div>
+	<button class = "pan2" onclick="show('')">Basic Syntax</button><br>
+	<button class = "pan2" onclick="show('')">Reading and Writing Files</button><br>
+	<button class = "pan2" onclick="show('')">Simple Graphs</button><br>
+
+		
+</div><br>
+<button onclick="show('modtut')" style = 'width:50%;'>Moderate Tutorials</button>
+<div id="modtut" class = "panel" >
+	<button class = "pan2" onclick="show('macpcd')">R Downloads</button><br>
+		<div id = "macpcd" class = "panel">
+			<button class = "pan3" onclick="show('macdown')">Mac Download</button><br>
+				<div id = "macdown" class = "panel">{% include 'includes/tutorial_includes/mac_download.html' %}</div><br>
+			<button class = "pan3" onclick="show('pcdown')">PC Download</button>
+				<div id = "pcdown" class = "panel">{% include 'includes/tutorial_includes/mac_download.html' %}</div><br>
+		</div>
+	<button class = "pan2" onclick="show('')">RStudio Downloads</button><br>
+	<button class = "pan2" onclick="show('')">Basic Syntax</button><br>
+	<button class = "pan2" onclick="show('')">Reading and Writing Files</button><br>
+	<button class = "pan2" onclick="show('')">Simple Graphs</button><br>
+
+		
+</div>
+<!--<div class="panel" id = 'tut'>
+	<button align = 'center' class="accordion">Downloading R</button>
+		<div class="panel">
+			<button align = 'center' class="accordion">Mac</button>
+				<div class="panel">Hello</div>
+			<button align = 'center' class="accordion">PC</button>
+				<div class="panel">Hello</div>
+		</div>
+	<button align = 'center' class="accordion">Downloading R Studio</button>
+			<div class="panel">
+			<button align = 'center' class="accordion">Mac</button>
+				<div class="panel">Hello</div>
+			<button align = 'center' class="accordion">PC</button>
+				<div class="panel">Hello</div>
+			</div>
+	<button align = 'center' class="accordion">Reading and Writing Files</button>
+		<div class="panel">Some text here.</div>
+	<button align = 'center' class="accordion">Simple Graphs</button>
+		<div class="panel">Some text here.</div>
+	<button align = 'center' class="accordion">Modules</button>
+		<div class="panel">Some text here.</div>
+	<button align = 'center' class="accordion">Handling Data Types</button>
+			<div class="panel">Some text here.</div>
+</div>
+
+<!-- These are the Moderate Tutorials 
+<button align = 'center' class="accordion">Moderate Tutorials</button>
+<div class="panel">
+	<button align = 'center' class="accordion">Machine Learning Basics</button>
+		<div class="panel">
+			Machine learning stuff
+		</div>
+	<button align = 'center' class="accordion">Heat Maps</button>
+		<div class="panel">
+			Heat map stuff
+		</div>
+	<button align = 'center' class="accordion">Clustering</button>
+			<div class="panel">
+		</div>
+</div>
+<!-- This is where Advanced Tutorials Go 
+<button align = 'center' class="accordion">Advanced Tutorials</button>
+<div class="panel">
+	<button align = 'center' class="accordion">Under Construction</button>
+		<div class="panel">
+				</div>
+</div>
+<br><br><br>
+<p class = 'ex'>
+Definition and explination of modules and libraries
+</p>
+<button align = 'center' class="accordion">Module and Library Tutorials</button>
+<div class="panel">
+
+	<button align = 'center' class="accordion">Under Construction</button>
+		<div class="panel">
+				</div>
+</div>-->
+<br><br><br>
+<script>
+function show(id) {
+    var x = document.getElementById(id);
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+</script>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+{% endblock %}

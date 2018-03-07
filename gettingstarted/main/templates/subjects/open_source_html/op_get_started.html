@@ -1,0 +1,212 @@
+{% extends "main_header.html" %}
+{% load staticfiles %}
+{% block content %}
+{% include 'includes/ProgrammingNav.html' %}
+
+
+<center>
+<h1 style = "font-weight: bold;"> Getting Started with Open Source Programming</h1>
+</center>
+<br><br>
+
+<div class="container">
+<center> 
+	<div>
+		<div>
+			<img src="{% static 'imgs/code.jpeg' %}" style = 'width: 60%; height:60%;'width="400" height="400"alt="dog">
+		</div>
+	</div>
+</center>
+</div>
+<button class = "btn btn-info btn-block" ><a href = "#download"><font color= 'white'>Where to Download</font></a></button>
+<br><br><br><br><hr style = "border-color: red;"><br><br>
+
+<center>
+<ul style="list-style-type:none;font-size: 2.2em;font-weight: bold; ">
+	<li>1.) Choose a Language</li>
+	<li>2.) Find Some Problem Sets/Resources</li>
+	<li>3.) Start Falling with Style</li>
+</ul>
+<br><br><hr style = "border-color: red;">
+</center>
+<br><br><br><br>
+<center>
+<p class = ex >
+Part 1: Choose a Language<br><br>
+Choosing a computer coding language can be intimidating. Each language has its own strengths
+and weaknesses and your personal interests weigh heavily into how you approach this question.
+<br><br>
+Lucky for you I went through this struggle about a year ago. To help you overcome this first hurdle
+I decided to put together a list of questions that you should ask yourself (and the all knowing Google machine) 
+before moving too far forward. 
+<br><br>Also, keep in mind where you start is not where you end. The vast majority of key
+concepts will translate from language to language, kind of like how a Canadian can still make sense of a Texan.
+<br><br><br>
+Click Below for more:
+</p>
+<button align = 'center' class="accordion">-Thoughts are like farts-<br> A byproduct of an organ trying to digest the world <br> -Unknown-</button>
+<div class="panel">
+	<button align = 'center' class="accordion">>> What do you plan on doing with programming? </button>
+		<div class="panel" style = 'font-size:1.7em;margin-right: 15%; margin-left:15%; '>Your project goals will ultimately determine which direction you will take
+																							for your first language. List out what your ideal project would look like and 
+																							look to see if other people have made that happen and what language they used.
+																							Another good idea is to look at jobs you are interested in and seeing what qualifications
+																							they require. As a heads up I will focus on Python and R in this site.</div>
+	</button>
+	<button align = 'center' class="accordion">>> Does your current job, or dream job, already use a particular language?</button>
+		<div class="panel"style = 'font-size:1.7em;margin-right: 15%; margin-left:15%; '>I touched upon this idea in the last question, however it is
+																						important for your sanity to use a language that is common to the job that you do. 
+																						Computing is a practical skill, and having problems that you can apply your skill to
+																						will help keep you moving forward and keep you excited to learn. So think about how applicable
+																						your first language is to your job or schooling.</div>
+	</button>
+	<button align = 'center' class="accordion">>> How much time do you plan on putting into your coding career?</button>
+		<div class="panel"style = 'font-size:1.7em;margin-right: 15%; margin-left:15%; '>If you do not want to dig too deep into computer science and are more interested in cranking out
+																							statistical models or automating data collection you should use higherlevel programs such as
+																							Python and R (obviously my favorites). If you plan to dedicate a lot of time to the computer science
+																							side of things think about learning C++ down the line.
+																							</div>
+	</button>
+	
+</div>
+
+
+
+<!--This is s script for making the accordion work-->
+
+<br><br><br><br>
+<p class = ex>
+Because you are new to all this you should know that there is an important concept of <a href = 'https://en.wikipedia.org/wiki/High-level_programming_language'target="_blank">high-level</a>
+ vs <a href = 'https://en.wikipedia.org/wiki/Low-level_programming_language' target = '_blank'>low-level</a> programming. An example of extremely high level programming is using Microsoft Excel or making a playlist on Spotify. Low level programming is using C++ or 
+Basic where you need to tell the computer EXACTLY how to behave.<br><br>
+</p>
+<div class="container" style = "border-style: dotted;">   
+  <div class="row">
+	<div class="col-sm-4">
+		<img src="{% static 'imgs/python.png' %}" class="responsive-img"  alt="code">
+	</div>
+	<div class="col-sm-4">
+		<img src="{% static 'imgs/R.png' %}" class="responsive-img"  height = '300em' alt="code">
+	</div>
+	<div class="col-sm-4">
+		<img src="{% static 'imgs/python.png' %}" class="responsive-img"  alt="code">
+	</div>
+</div>
+</div>
+<br><br><br>
+<p class = ex>
+It is for this reason I suggest starting with higher level programming such as Python, or R. Downloads and Tutorials can be found below.
+<br><br id = "download">
+Here are a few of my favorites and places to download:
+</p>
+<button align = 'center' class="accordion" >Downloads and Tutorial Links</button>
+<div class="panel">
+	<button align = 'center' class="accordion">Python</button>
+		<div class="panel"style='font-size:1.7em;margin-right: 15%; margin-left:15%; '>Download <a href = 'https://www.python.org/downloads/' target = '_blank'>Python 3 Here.</a><br>
+																						For Python Beginner Tutorials <a href = '#' target = '_blank'>Click Here.</a></div>
+	</button>
+	<button align = 'center' class="accordion">R</button>
+		<div class="panel"style='font-size:1.7em;margin-right: 15%; margin-left:15%; '>Download <a href = 'https://www.r-project.org/' target = '_blank'>R Here.</a><br>
+																						<font color = 'red'><u>NOTE: The R website is rough to navigate. The tutorial below will describe what is going
+																						on and how to navigate your download.</u></font><br>
+																						For R Beginner Tutorials <a href = '#' target = '_blank'>Click Here.</a></div>
+	</button>
+	
+</div>
+
+<br><br>
+<h2 style = 'font-weight:bold;'><u>Part 2: Find Some Resources and Problem Sets</u></h2>
+<p class = ex>
+If you made it this far that means you have found a language that you believe will work best for you.
+The exciting part here is that you can now start learning key programming concepts that will follow you 
+in every language that you learn from here on out.<br><br>
+In reality, programming is an art of being as lazy as possible. As a programmer we aim to automate actions
+and say as little as possible while getting the most work done. Kind of like a well placed grunt.<br><br>
+To accomplish this we use common phrases. To get a better understanding you can check out the phrases and concepts below.<br><br>
+</p>
+<button align = 'center' class="accordion">The Core Concepts</button>
+<div class="panel">
+
+	<button align = 'center' class="accordion">Loops</button>
+		<div class="panel">Some text here.</div>
+	</button>
+	<button align = 'center' class="accordion">Functions</button>
+		<div class="panel">Some text here.</div>
+	</button>
+	<button align = 'center' class="accordion">Counters</button>
+		<div class="panel">Some text here.</div>
+	</button>
+	<button align = 'center' class="accordion">Libraries</button>
+		<div class="panel">Some text here.</div>
+	</button>
+	<button align = 'center' class="accordion">Modules</button>
+		<div class="panel">Some text here.</div>
+	</button>
+	<button align = 'center' class="accordion">Reading in a File</button>
+		<div class="panel">Some text here.</div>
+	</button>
+</div>
+<p class = 'ex'>
+<br><br>
+Once you have chosen a language and learned how to use the above concepts with the proper syntax of your language
+you can move on to more complex tasks.
+<br><br>
+<u>Part 3: Falling With Style</u>
+<br><br>
+You learn the most through failure, and there is no field in the world that knows this montra as truly as programming.
+You can only learn by doing and you will fall on your face...like a lot...at the beginning. Do not get discouraged in this time. 
+Look to the Internet for answers. There are large communities out there to help you. Below is a list of some of the 
+forums that I have turned to time and time again.
+<br><br>
+</p>
+<button align = 'center' class="accordion">Helpful Places</button>
+<div class="panel">
+	<button align = 'center' class="accordion">TutorialsPoint</button>
+		<div class="panel"style='font-size:1.7em;margin-right: 15%; margin-left:15%; '>
+		<a href= 'https://www.tutorialspoint.com/index.htm' target='_blank'>
+		TutorialsPoint</a> 
+		is a great place to get an understanding of the core concepts as the apply to Both 
+		<a href= 'https://www.tutorialspoint.com/r/index.htm' target='_blank'>
+		R</a>
+		and 
+		<a href= 'https://www.tutorialspoint.com/python/index.htm' target='_blank'>
+		Python.</a>
+		I strongly encourage you to check them out!</div>
+	</button>
+	<button align = 'center' class="accordion">Stack Overflow</button>
+		<div class="panel"style='font-size:1.7em;margin-right: 15%; margin-left:15%; '>
+		Stack Overflow is a comunity of coders asking questions and getting answers. Chances are someone has run
+		into the exact same problem. You can use your favorite search engine or search their site at <a href = 'https://stackoverflow.com/' target = '_blank'>StackOverflow.com</a></div>
+	</button>
+	<button align = 'center' class="accordion">You Tube</button>
+		<div class="panel"style='font-size:1.7em;margin-right: 15%; margin-left:15%; '>Yes, it is that simple. YouTube will help you so much figuring things out, just
+																						Try not to get TOO distracted by all the amazing videos of sloths.<br><br>
+																						Also, I have many links to tutorials that I have found useful in the tutorial
+																						sections of my site <a>Python Here</a> and <a>R Here</a></div>
+	</button>
+	
+</div>
+<br><br><br><br>
+<p class = 'ex'>
+ Now go on to <a>The Dojo</a> and start working on some problems and kicking some butt!
+</p>
+</center>
+<br><br> 
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+<br><br><br><br>
+<br><br><br><br>
+{% endblock %}

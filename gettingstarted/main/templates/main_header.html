@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<title>Data Hound</title>
+
+
+<html lang="en">
+<head>
+  <title>Data Hound</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'css/mycss.css' %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/home/">Data Hound</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/home/">Home</a></li>
+		<!--<li><a href="/Final_Project/">Final Project</a></li>-->
+        <li><a href="/about/">About</a></li>
+		<li><a href="/the_buzz/">The Buzz</a></li>
+		<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Subjects<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/open_source_programming/">Open Source Programming</a></li>
+            <li><a href="/next_gen_sequencing/">Next Gen Sequencing</a></li>
+            <li><a href="/databases/">Databases</a></li>
+			<li><a href="/web_based_tools/">Web Based Tools</a></li>
+          </ul>
+        </li>
+		<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Graphs<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/stacked_line/">Stacked Line</a></li>
+            <li><a href="/doughnut/">Doughnut</a></li>
+            <!--<li><a href="/area/">Area</a></li>-->
+          </ul>
+        </li>
+		</ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br><br><br><br>
+
+	
+<!--Header-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+		<img src="{% static 'imgs/prot.png' %}"  class="responsive-img" style = 'max-height: 10em;' alt="prot">
+    </div>
+    <div class="col-sm-4"><center>
+		<font size = 6em><b>Welcome to Data Hound</b></font>
+		</center>
+    </div>
+	<div class="col-sm-4">
+		<img src="{% static 'imgs/prot2.png' %}"  class="responsive-img" style = 'max-height: 10em;' alt="prot">
+    </div>
+  </div>
+</div>
+<hr>
+
+
+</head>
+<body>
+
+
+{% block content %}{% endblock %}
+
+</body>
+
+</html>

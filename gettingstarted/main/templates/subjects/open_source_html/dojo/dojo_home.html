@@ -1,0 +1,40 @@
+{% extends "main_header.html" %}
+{% load staticfiles %}
+{% block content %}
+{% include 'includes/ProgrammingNav.html' %}
+
+
+<center>
+<h1 style = "font-weight: bold;"> The Dojo</h1>
+</center>
+<br><br>
+
+<div class="container">
+<center> 
+	<div>
+		<div>
+			<img src="{% static 'imgs/dojo.jpeg' %}" style = 'width: 60%; height:60%;'width="400" height="400"alt="dog">
+		</div>
+	</div>
+</center>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+<br><br><br><br>
+<br><br><br><br>
+{% endblock %}

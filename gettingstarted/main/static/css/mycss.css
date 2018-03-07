@@ -1,0 +1,44 @@
+p.ex{
+	font-size: 2.0em;
+	width: 75%;
+	font-weight: bold;
+	margin-right: 10%; 
+	margin-left:10%; 
+	
+}
+.accordion {
+    background-color: #00BFFF;
+    color: #F0FFFF;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    transition: 0.4s;
+	font-size: 12px;
+
+}
+
+.active, .accordion:hover {
+    background-color: #4682B4; 
+}
+
+.panel {
+	display: none;
+	margin-right: 10%; 
+	margin-left:10%; '
+    display: none;
+    background-color: white;
+    overflow: hidden;
+	
+
+}
+
+.pan2{
+	width:50%;
+	background-color: #00BFFF;
+    color: #F0FFFF;
+}
+.pan3{
+	width:50%;
+	background-color: black;
+    color: white;
+}

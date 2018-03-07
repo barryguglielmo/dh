@@ -1,0 +1,23 @@
+{% extends "main_header.html" %}
+{% load staticfiles %}
+{% block content %}
+{% include 'includes/ProgrammingNav.html' %}
+
+<center>
+<h1 style = 'font-wight:bold;'><u>The Buzz</u></h1>
+
+<br><br>
+<div class="container"> 
+	<div>
+		<div>
+			<img src="{% static 'imgs/coffee.jpeg' %}" style = 'width: 50%; height:50%;'width="300" height="300"alt="code">
+		</div>
+	</div>
+</div>
+<br><br> 
+<p class = "ex">
+Latest Stories:
+<br><br>
+<br><br>
+</center>
+{% endblock %}
